@@ -1,0 +1,50 @@
+A.	WRAPPERR CLASS
+
+Wrapper Class (Kelas Pembungkus) di dalam bahasa pemrograman Java,  adalah suatu  mekanisme  yang digunakan untuk mengconvert atau mengubah , suatu  nilai yang di definisikan ,dengan tipe data primitif ,menjadi sebuah nilai dengan tipe data objek (referensi). Selain itu juga  , Wrapper Class ini disediakan untuk , mendukung fungsi atau method ,dari tipe data primitif. Beberapa Contoh yang termasuk ke dalamnya yaitu   , seperti Boolean ,Character ,Byte,Short ,Integer, Long, Float dan Double. Pada kesempatan belajar java kali ini  , kita akan mengenal dan membuat contoh penggunaan dari Wrapper Class ini , dengan menggunakan bahasa pemrograman Java. 
+
+Tipe Data Primitif	Wrapper Class:
+	int	Integer
+	char	Character
+	byte	Byte
+	double	Double
+	boolean	Boolean
+	short	Short
+	long	Long
+	float	Float
+
+
+Pada contoh code WrapperExapmple diatas ,kita menggunakan Wrapper Class , seperti Integer , Double ,Boolean dan Character.
+Lalu kita menginstansi objek tersebut ,  dan juga  menggunakan Constructor , untuk mendefinisikan nilainya pada argumen.
+Kecuali Character Class , di dalam Wrapper Class ,kita juga dapat menggunakan dua tipe argument , dengan menggunakan tipe data primitif pada umumnya ,dan juga tipe data String.
+
+Kita juga dapat mengakses method secara langsung , pada Wrapper Class , dengan method keyword static ,yang telah di definisikan di di dalam Wrapper Class.
+
+Seperti contohnya , Integer.MAX_VALUE , dan juga Double.MAX_VALUE. Yang digunakan untuk menampilkan output hasil , nilai maximal dari tipe data integer dan juga double.
+
+Setelah itu kita tampilkan output hasilnya.
+
+Konversi Tipe Data Primitif ke Wrapper Class , begitu juga sebaliknya : 
+Penjelasan :
+
+Seperti yang kita lihat , pada contoh code WrapperExample2 diatas. Kita dapat mengkonversi nilai dari tipe data int , ke Integer ,dengan menggunakan method static Integer.valueOf(angka1); 
+
+Begitu juga kita dapat mengkonversi nilai dari tipe data Integer ke int , dengan menggunakan objek method , integerObjek2.intValue();
+Selanjutnya , kita tampilkan output hasilnya.
+
+B.	PERBEDAAN FINAL, FINALLY, FINALLIZE
+
+1.	final, adalah keyword untuk mendeklarasikan bahwa sebuah variabel/atribut tidak dapat diubah lagi isinya (konstan), jika final disebutkan di method, artinya method tersebut tidak dapat di override oleh subclassnya, jika final disebutkan di class, artinya class tersebut tidak dapat diturunkan lagi.
+Jadi meng-exetend-kan class final akan menyebabkan error: 
+Hal yang perlu kita perhatikan adalah ketika Anda mendeklarasikan class sebagai final, maka objek dari class tersebut tidak immutable. Dalam artian bahwa Anda bisa mengganti field dari class tersebut dengan bebas.
+Jadi final pada class artinya class tersebut hanya tidak bisa diwariskan saja.
+Class yang dideklarasikan final biasanya dilakukan karena alasan keamanan. Dalam pemrograman Java mendokumentasikan setiap class yang dibuat dengan baik merupakan good practice.
+Ketika class dideklarasikan sebagai final maka itu harus berdasarkan pertimbangan yang matang.
+Karena ketika suatu class dibuat final maka tidak ada programmer lain yang bisa memperbaikinya.
+Contohnya ketika kita menggunakan sebuah class final dan class tersebut tidak memiliki source code. Kemudian ketika terdapat masalah pada salah satu method  maka akan menjadi sulit karena class final tersebut tidak bisa di extend.
+Akibatnya method tersebut tidak bisa dioverride untuk memperbaiki masalahnya. Dalam kasus ini kita akan kehilangan ekstensibilitas, sebuah konsep penting yang menguntungkan dari pemrograman berorientasi objek.
+	
+2.	finally, merupakan tag dalam try-catch-finally yang digunakan untuk memastikan bahwa kode didalam finally akan dieksekusi walaupun dalam try sukses / gagal.
+Contoh coding :
+
+3.	finalize, merupakan methode kelas Object yang dieksekusi saat garbace collection menghapus sebuah object yang sudah tidak terpakai.
+
